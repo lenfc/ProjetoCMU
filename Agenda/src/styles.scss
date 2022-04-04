@@ -6,5 +6,19 @@ body{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-input-element {
-    caret-color: #5ab73a;
+    color: #000000!important;
+}
+.mat-form-field.mat-focused.mat-form-field-label {
+    color: #3a3e63!important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background-color: #3a3e63!important;
+}
+
+.mat-form-field-label{
+    color: #3a3e63!important;
+}
+.mat-form-field-ripple {
+    background-color: #3a3e63!important;
 }
