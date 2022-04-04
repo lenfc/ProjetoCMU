@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Criar novo contato</h1>
+<div mat-dialog-content>
+  <p>Nome:</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="data.nome">
+  </mat-form-field>
+</div>
+<div mat-dialog-content>
+    <p>Sobrenome</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Sobrenome</mat-label>
+      <input matInput [(ngModel)]="data.sobrenome">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-content>
+    <p>Empresa</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Empresa</mat-label>
+      <input matInput [(ngModel)]="data.empresa">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-content>
+    <p>Cargo</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Cargo</mat-label>
+      <input matInput [(ngModel)]="data.cargo">
+    </mat-form-field>
+  </div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

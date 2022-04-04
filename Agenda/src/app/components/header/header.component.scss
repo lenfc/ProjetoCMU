@@ -1,0 +1,29 @@
+.header{
+    /* height: 50px; */
+    /* width: 100%; */
+    margin: 0;
+    padding: 15px;
+    background-color: #3a3e63;
+    display: block;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    img{
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        width: 30px;
+        background-color: #ffffff;
+    }
+    div{
+        display: inline-block;
+        // font-size: 16px;
+        color: white;
+        margin: 0px 20px 0px 0;
+        font-weight: 500;
+    }
+}
