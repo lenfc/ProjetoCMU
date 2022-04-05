@@ -22,3 +22,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-form-field-ripple {
     background-color: #3a3e63!important;
 }
+.mat-flat-button.mat-primary{
+    background-color: #3a3e63!important;
+}
+.accordion .mat-form-field {
+    width: -webkit-fill-available;
+}
+.accordion-item-body {
+    padding: 10px!important;
+}
+.accordion-item-header {
+    padding: 10px 5px 0px 10px!important;
+}

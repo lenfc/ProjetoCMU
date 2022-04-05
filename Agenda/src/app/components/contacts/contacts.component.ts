@@ -6,12 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
+  mode = 'view';
 
   constructor() { }
-
   ngOnInit(): void {
+    
   }
-
+  editContact(contact:any) {
+    this.mode = 'edit';
+  }
+  cancelEditContact(){
+    this.mode = 'view';
+  }
   items = [
     {nome:'Luiz', sobrenome: 'Sousa', empresa: 'AAA', cargo: 'Atendente'},
     {nome:'Sonia', sobrenome: 'Pereira da Silva', empresa: 'BBB', cargo: 'Gerente'},
@@ -20,4 +26,6 @@ export class ContactsComponent implements OnInit {
     {nome:'Heitor', sobrenome: 'Sousa', empresa: 'CCC', cargo: 'Gestor'}
   ];
   expandedIndex = 0;
+
+
 }
