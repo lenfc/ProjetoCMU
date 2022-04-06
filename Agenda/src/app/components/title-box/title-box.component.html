@@ -84,11 +84,8 @@
           [attr.aria-controls]="'accordion-body-' + index"
           [disabled]="mode !== 'view'">
           <div class="accordion-item-header" [ngClass]="{'accordion-item-header-disabled': mode !== 'view'}" (click)="accordionItem.toggle()">
-            <div *ngIf="mode === 'view'">
+            <div *ngIf="mode !== 'create'">
               {{ item.nome }} {{ item.sobrenome }} {{ item.cargo }} <label *ngIf="!!item.empresa">da empresa {{ item.empresa }}</label>
-            </div>
-            <div *ngIf="mode === 'edit'">
-              Editar contato:
             </div>
             <span class="accordion-item-description" [ngStyle]="{'transform': accordionItem.expanded? 'rotate(180deg)': 'rotate(0deg)'}">
               <mat-icon aria-hidden="false" aria-label="open/close icon">expand_more</mat-icon>
