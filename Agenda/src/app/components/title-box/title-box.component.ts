@@ -25,7 +25,7 @@ export class TitleBoxComponent implements OnInit {
   ngOnInit(): void {
     //const a = fs.readFile('../../data/contacts.json');
     const a = require('../../data/contacts.json');
-    console.log(a);
+    //console.log(a);
     this.contacts = a.contacts.sort(this.sortArrayByName);
     this.numID = a.nextId;
   }
